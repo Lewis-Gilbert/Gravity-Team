@@ -31,3 +31,7 @@ document
     ".fade-in-up, .slide-in-left, .slide-in-right, .stat-box, .testimonial-text",
   )
   .forEach((el) => observer.observe(el));
+
+document.querySelectorAll(
+  ".fade-in-up, .slide-in-left, .slide-in-right, .testimonial-text",
+);
