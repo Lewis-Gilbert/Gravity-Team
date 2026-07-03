@@ -546,6 +546,26 @@ h1 {
   color: #5fa4e6;
 }
 
+.learn-more a {
+  position: relative;
+  display: inline-block;
+}
+
+.learn-more a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #665dcd, #5fa4e6, #d2ab67);
+  transition: width 0.35s ease;
+}
+
+.learn-more a:hover::after {
+  width: 100%;
+}
+
 /* === KEYFRAMES === */
 @keyframes fadeInUp {
   from {
@@ -642,6 +662,22 @@ h1 {
     font-size: 20px;
     line-height: 34px;
     max-width: 100%;
+  }
+  .work-with-us {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .work-with-us h2 {
+    width: 100%;
+    height: auto;
+    font-size: 36px;
+  }
+  .work-with-us p {
+    width: 100%;
+  }
+  .learn-more {
+    justify-content: center;
   }
 }
 
@@ -748,6 +784,17 @@ h1 {
     max-width: 100%;
   }
   .about-us h5 {
+    font-size: 16px;
+  }
+  .work-with-us {
+    margin: 60px auto;
+    padding: 0 16px;
+    gap: 20px;
+  }
+  .work-with-us h2 {
+    font-size: 28px;
+  }
+  .work-with-us p {
     font-size: 16px;
   }
 }
