@@ -35,7 +35,3 @@ document
 document.querySelectorAll(
   ".fade-in-up, .slide-in-left, .slide-in-right, .testimonial-text",
 );
-
-document.body.style.overflow = navLinks.classList.contains("open")
-  ? "hidden"
-  : "";
